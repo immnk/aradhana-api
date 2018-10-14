@@ -39,29 +39,29 @@ router.get("/validate", (req, res, next) => {
 });
 
 router.get("/events", (req, res, next) => {
-  const userPermission = req.query.permission;
-  if (!userPermission) {
-    res.json(returnErrorObject("Permission not defined"));
-  } else {
-    let currentDate = new Date().getTime();
-    console.log(currentDate);
-    return db.ref('/events')
-      .orderByChild('eventDate')
-      .once("value", (snapshot) => {
-        // console.log(snapshot.val());
-        let events = [];
-        snapshot.forEach((child) => {
-          let event = child.val();
-          if (userPermission === "admin" || event.permission === "all")
-            events.push(event);
-        });
+  let userPermission = req.query.permission;
+  if (!userPermission)
+    userPermission = user;
 
-        res.json({
-          success: true,
-          body: events
-        });
+  let currentDate = new Date().getTime();
+  console.log(currentDate);
+  return db.ref('/events')
+    .orderByChild('eventDate')
+    .once("value", (snapshot) => {
+      // console.log(snapshot.val());
+      let events = [];
+      snapshot.forEach((child) => {
+        let event = child.val();
+        if (userPermission === "admin" || event.permission === "all")
+          events.push(event);
       });
-  }
+
+      res.json({
+        success: true,
+        body: events
+      });
+    });
+
 });
 
 function returnErrorObject(errorMessage) {
