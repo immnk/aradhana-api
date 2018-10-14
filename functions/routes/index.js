@@ -43,21 +43,24 @@ router.get("/events", (req, res, next) => {
   if (!userPermission) {
     res.json(returnErrorObject("Permission not defined"));
   } else {
-    let currentDate = new Date().toUTCString();
+    let currentDate = new Date().getTime();
+    console.log(currentDate);
+    return db.ref('/events')
+      .orderByChild('eventDate')
+      .once("value", (snapshot) => {
+        // console.log(snapshot.val());
+        let events = [];
+        snapshot.forEach((child) => {
+          let event = child.val();
+          if (userPermission === "admin" || event.permission === "all")
+            events.push(event);
+        });
 
-    return db.ref('/events').orderByChild('eventDate').startAt(currentDate).once("value", (snapshot) => {
-      let events = [];
-      snapshot.forEach((child) => {
-        let event = child.val();
-        if (userPermission === "admin" || event.permission === "all")
-          events.push(event);
+        res.json({
+          success: true,
+          body: events
+        });
       });
-
-      res.json({
-        success: true,
-        body: events
-      });
-    });
   }
 });
 
