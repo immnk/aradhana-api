@@ -32,7 +32,7 @@ router.get("/validate", (req, res, next) => {
     if (password) {
       res.json({
         success: true,
-        body: password[0]
+        body: password[password.length - 1]
       });
     } else res.json(returnErrorObject("Pass key is not valid!"));
   });

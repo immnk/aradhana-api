@@ -2,29 +2,29 @@
   "events": [{
     "eventDate": "1540319400000",
     "eventName": "Puppy's birthday",
-    "permission": "all",
-    "eventPicture": "assets/imgs/events.jpg"
+    "eventPicture": "https://firebasestorage.googleapis.com/v0/b/aradhana-api.appspot.com/o/aradhana.jpg?alt=media&token=c1912718-6ede-43d8-a5aa-3fe9d824617f",
+    "permission": "all"
   }, {
     "eventDate": "1540045800000",
     "eventName": "Mani's arrival",
-    "permission": "admin",
-    "eventPicture": "assets/imgs/events.jpg"
+    "eventPicture": "https://firebasestorage.googleapis.com/v0/b/aradhana-api.appspot.com/o/36858973_1947546705295678_4471495657365962752_o.jpg?alt=media&token=c39ffedc-ca8c-488b-ba1b-c78050391aec",
+    "permission": "admin"
   }, {
     "eventDate": "1539491100000",
     "eventName": "Test event",
-    "permission": "all",
-    "eventPicture": "assets/imgs/events.jpg"
+    "eventPicture": "assets/imgs/events.jpg",
+    "permission": "all"
   }, {
     "eventDate": "1540305000000",
     "eventName": "Mayfair booking",
-    "permission": "admin",
-    "eventPicture": "https://firebasestorage.googleapis.com/v0/b/aradhana-api.appspot.com/o/aradhana.jpg?alt=media&token=c1912718-6ede-43d8-a5aa-3fe9d824617f"
+    "eventPicture": "http://www.mayfairhotels.com/mayfair-goa/img/slide1.jpg",
+    "permission": "admin"
   }],
   "users": [{
-    "password": "mani25",
+    "password": "chinna5",
     "userType": "admin"
   }, {
-    "password": "user123",
+    "password": "secret1",
     "userType": "user"
   }]
 }
