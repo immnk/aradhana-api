@@ -1,0 +1,25 @@
+{
+  "events": [{
+    "eventDate": "Tue, 23 Oct 2018 18:30:00 GMT",
+    "eventName": "Puppy's birthday",
+    "permission": "all",
+    "eventPicture": "https://firebasestorage.googleapis.com/v0/b/aradhana-api.appspot.com/o/default.jpg?alt=media&token=79543bf1-2b17-49ff-8d9f-9cafb2032903"
+  }, {
+    "eventDate": "Sat, 20 Oct 2018 14:30:00 GMT",
+    "eventName": "Mani's arrival",
+    "permission": "admin",
+    "eventPicture": "https://firebasestorage.googleapis.com/v0/b/aradhana-api.appspot.com/o/aradhana.jpg?alt=media&token=c1912718-6ede-43d8-a5aa-3fe9d824617f"
+  }, {
+    "eventDate": "Tue Oct 23 2018 20:00:00 GMT+0530",
+    "eventName": "Mayfair booking",
+    "permission": "admin",
+    "eventPicture": "https://firebasestorage.googleapis.com/v0/b/aradhana-api.appspot.com/o/aradhana.jpg?alt=media&token=c1912718-6ede-43d8-a5aa-3fe9d824617f"
+  }],
+  "users": [{
+    "password": "mani25",
+    "userType": "admin"
+  }, {
+    "password": "user123",
+    "userType": "user"
+  }]
+}
