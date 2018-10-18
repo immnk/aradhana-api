@@ -1,0 +1,35 @@
+{
+  "events" : [ {
+    "eventDate" : "1540319400000",
+    "eventName" : "Puppy's birthday",
+    "eventPicture" : "https://firebasestorage.googleapis.com/v0/b/aradhana-api.appspot.com/o/aradhana.jpg?alt=media&token=c1912718-6ede-43d8-a5aa-3fe9d824617f",
+    "permission" : "all"
+  }, {
+    "eventDate" : "1540045800000",
+    "eventName" : "Mani's arrival",
+    "eventPicture" : "https://firebasestorage.googleapis.com/v0/b/aradhana-api.appspot.com/o/36858973_1947546705295678_4471495657365962752_o.jpg?alt=media&token=c39ffedc-ca8c-488b-ba1b-c78050391aec",
+    "permission" : "admin"
+  }, {
+    "eventDate" : "1539491100000",
+    "eventName" : "Test event",
+    "eventPicture" : "assets/imgs/events.jpg",
+    "permission" : "all"
+  }, {
+    "eventDate" : "1540305000000",
+    "eventName" : "Mayfair booking",
+    "eventPicture" : "http://www.mayfairhotels.com/mayfair-goa/img/slide1.jpg",
+    "permission" : "admin"
+  }, {
+    "eventDate" : "1551571200000",
+    "eventName" : "Mani & Aradhana's Wedding",
+    "eventPicture" : "https://firebasestorage.googleapis.com/v0/b/aradhana-api.appspot.com/o/WhatsApp%20Image%202018-10-18%20at%2012.44.21%20PM.jpeg?alt=media&token=a309843d-ad98-4f0e-9eb6-73a452c4b52e",
+    "permission" : "admin"
+  } ],
+  "users" : [ {
+    "password" : "chinna5",
+    "userType" : "admin"
+  }, {
+    "password" : "secret1",
+    "userType" : "user"
+  } ]
+}
