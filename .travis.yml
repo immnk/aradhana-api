@@ -4,17 +4,8 @@ node_js:
 script:
   -
 before_script:
-  - 
+  -
 deploy:
   provider: firebase
   token:
-    secure: OtahYE7c5sQFo/Fj2oDt0aDTBifzE1vvwwAuqLtaojuGHDq5FvhkJV6Imh29htQ0lX3d0rpLqjNFCxTgpwuBk1wJUequEwyS7A9z
-      hXqDhxbcd8I5c25g3Wy+rbIvx54tI0df0OV5BE7FzTuFKsKipwT5Se8UwMeZtM+l6YT6l4e+lkwWgWAXJX6wFUQUKrlgISvLcOdd5EYBysip1yp
-      VciLPtWZgaLmo2AykROTK0xEz8uCftvFLAnQJYcJnsajxrTFJkR+hszShd8TseBw5pp/TSMXJK68te06NZTOTDuoP0j6uRtoub2Qx6+6Ig3QcCK
-      ozemcrp5OnZ83dMPHJeeR7XECPdOLnzdKVh/gdXjBpJ+vetRs5Fw/vsgzq+w8KgImxRCVmdE0plVB9hZHK1nOYmWv6M/cSjs9jIJD4XdqIszTuk
-      zwlCSNhAEft1xYoKWpZ7sI42Y7OAgS9lOyc0VCRGRoti+wft8kDHPtFok1oUigWihhDGFQ/chXMGPBjOktJLovCik24FslA7LVidCUtEkGNjH8t
-      1qYpi3z9PXFqVRppLcz4lR9bLjJPcsZsSGBG6iRMPqEZoqUKEe2o9/6dhphOdzKWxOJaNz7F6urZ5EvwQ8vjEzDsbC5E5izL85TFxRHWLlf8Ej7
-      6ne/gUK5SQ4sLuEBWZz0ueBvjtUU=
-env:
-  global:
     secure: Sz5xvb86n0h/t7YNVMzhIi2bg+OTHTWcOWVExfH8f3/1ay4jHtLll83sGezLJaZBufmwpaJQDXAjGShbnk5MqXDU/JlM0ctCFqQ2KTAOKefn6FPcCXc526087J4ZisOKVmV3+NQcToz3pkVpot5Q3zZFQMPZfWnO6a7Ldz2PgFqDH/CeDBFw0kAokibcVS+1kLKaNfr7Y4CAm68i4E1EI4A5WCWLgULEZlqu4M0CrAHdI8L+jtXs0WNoZkEybJFia7y+3AGc9XvAd+OOcffCdVJP28f9/frG9cGT3+VK7qPq14WEcMZvd8vzEA1NNXamiT2lzKp+OzqnGo6yUBGhF8zZKrz7TJqzIsyd2q8iRTFtLzUDqTaev73hd3WNctam3Vjpox4d/eVuzlc1YUxxENIBXMXasHIZ+ekEnxUxS3y1O+b1broJHsEXWsRDn5Y57ex6nJmScPHN4Y3ipDyFWBvBj6eqxuPBvotVN4vX3AuZaAkgkRtiYXMP1pxTCQ0q7DjiAGatCSWY62Dx6T5SIrYZK31tz2NGWFwtWyo0h8Oad7dverTzjAvBVdYNgsaJBVxVojEr5ORVjYv/16o3Q6HPWLNjV01DI+xLjOKzGe9wd7VbukyK82CFh3LZuqQR1bI9YcoUTIfJtXON+aiKLmP5q768gwSrfxjoCGo3vJw=
