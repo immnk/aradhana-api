@@ -4,7 +4,7 @@ node_js:
 script:
   -
 before_script:
-  -
+  - cd functions && npm install
 deploy:
   provider: firebase
   token:
