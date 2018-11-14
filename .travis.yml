@@ -1,8 +1,10 @@
 language: node_js
 node_js:
-- node
+  - node
 script:
-- 
+  -
+before_script:
+  - 
 deploy:
   provider: firebase
   token:
