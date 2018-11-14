@@ -1,6 +1,5 @@
 {
   "projects": {
-    "production": "aradhana-api",
-    "default": "aradhana-api"
+    "production": "aradhana-api"
   }
 }
