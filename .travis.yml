@@ -1,18 +1,4 @@
-language: node_js
-node_js:
-  - node
-script:
-  -
-before_script:
-  - npm install -g firebase-tools
-cache:
-  directories:
-  - node_modules
 deploy:
   provider: firebase
-  skip_cleanup: true
-  on:
-    branch: hosting
-    tags: true
   token:
     secure: Sz5xvb86n0h/t7YNVMzhIi2bg+OTHTWcOWVExfH8f3/1ay4jHtLll83sGezLJaZBufmwpaJQDXAjGShbnk5MqXDU/JlM0ctCFqQ2KTAOKefn6FPcCXc526087J4ZisOKVmV3+NQcToz3pkVpot5Q3zZFQMPZfWnO6a7Ldz2PgFqDH/CeDBFw0kAokibcVS+1kLKaNfr7Y4CAm68i4E1EI4A5WCWLgULEZlqu4M0CrAHdI8L+jtXs0WNoZkEybJFia7y+3AGc9XvAd+OOcffCdVJP28f9/frG9cGT3+VK7qPq14WEcMZvd8vzEA1NNXamiT2lzKp+OzqnGo6yUBGhF8zZKrz7TJqzIsyd2q8iRTFtLzUDqTaev73hd3WNctam3Vjpox4d/eVuzlc1YUxxENIBXMXasHIZ+ekEnxUxS3y1O+b1broJHsEXWsRDn5Y57ex6nJmScPHN4Y3ipDyFWBvBj6eqxuPBvotVN4vX3AuZaAkgkRtiYXMP1pxTCQ0q7DjiAGatCSWY62Dx6T5SIrYZK31tz2NGWFwtWyo0h8Oad7dverTzjAvBVdYNgsaJBVxVojEr5ORVjYv/16o3Q6HPWLNjV01DI+xLjOKzGe9wd7VbukyK82CFh3LZuqQR1bI9YcoUTIfJtXON+aiKLmP5q768gwSrfxjoCGo3vJw=
