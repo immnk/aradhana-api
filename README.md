@@ -1,4 +1,4 @@
-# aradhana-api
+# Aradhana API
 
 [![Build Status](https://travis-ci.org/immnk/aradhana-api.svg?branch=master)](https://travis-ci.org/immnk/aradhana-api)
 
