@@ -37,3 +37,5 @@ UserInterfaceState.xcuserstate
 *.apk
 
 *serviceAccount.json
+
+.firebase
