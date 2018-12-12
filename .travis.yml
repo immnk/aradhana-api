@@ -1,8 +1,9 @@
 language: node_js
 node_js:
-- '6'
+  - "node"
+script:
+  -
 deploy:
   provider: firebase
   token:
-    secure: $FIREBASE_TOKEN
-  message: build $TRAVIS_BUILD_NUMBER $TRAVIS_BRANCH/$COMMIT_HASH
+    secure: "MUgOf6t2vBPMuCgm6SY8Qdh1+0CQQHFoQG4uFYFtIHPC71MSDg2eqmLud7PwhYccdBAX4D6DqH/D6Y855i9yBobFIZUn+IphXF05nD8phG2V2z+dPxdY0etHTRZx8Wb4RK2RkBcL8avk7RR4WSHxunPaEL+c7ZnvWwQu7PatnTJqdTRj/DNmgkryZSmFdKeEer6xNl+0fFbE2UIDpPQJd7tqYj2vaR0C25wZ1lNPZPgyW9jVB2c7dtnmqnsNce/YHbceEdKvThKAnHY7o58lGScSnSagZvqzXEYm9f9CRIGkPiglSYltvmhnKalthWp6t7Lc76rDbucTLKLkZkqv6aIULSN57Zh+TLBpB0/yoG+7ipaq1vJeGL3ML4ruEqtpgPNVNLwFM1EEPfQ5ZeJ8rXl47qVgE3AVoricGJcHc/HV+1uE4R/VGsdty3/BTN887iZTjY0KOG3vsY3Cm6nM7nuBY7wRnYzn8/jqIqt6kqLrilCELReEgPo8O8aI9HStLG279ZfBl5Tkf5NZPtLkOjaiWzFZjkpI1+MMmngPnr23Q4OZUZ4ntPSyPexF6Ysh4aZd+gwRxm6tdZl/jNk7AB9b5xNpl+wqbUvJgzuWgvf5bhlOoUv6tMZy2pcARGnd9ONJvpdzJFuR2RlB1/kFJA2M/k9sb9/1o4qsBOCXtwI="
