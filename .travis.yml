@@ -7,3 +7,6 @@ before_script:
 
 script:
   - firebase deploy --token "$FIREBASE_TOKEN" --non-interactive
+
+deploy:
+  on: master

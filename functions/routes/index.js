@@ -8,7 +8,7 @@ const router = express.Router();
 const constants = require('../utils/constants');
 
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
+  credential: admin.credential.applicationDefault(),
   databaseURL: "https://aradhana-api.firebaseio.com"
 });
 
