@@ -3,7 +3,7 @@ const express = require('express');
 const functions = require('firebase-functions');
 // The Firebase Admin SDK to access the Firebase Realtime Database.
 const admin = require('firebase-admin');
-const serviceAccount = require("../utils/aradhana-api-serviceAccount.json");
+// const serviceAccount = require("../utils/aradhana-api-serviceAccount.json");
 const router = express.Router();
 const constants = require('../utils/constants');
 
