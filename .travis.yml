@@ -6,7 +6,11 @@ before_script:
   - cd functions && npm install && cd ..
 
 script:
-  - firebase deploy --token "$FIREBASE_TOKEN" --non-interactive
+  - echo 'deploying!'
 
 deploy:
-  on: master
+  # deploy develop to the staging environment
+  - provider: script
+    script: bash deploy.sh
+    on:
+      branch: master
