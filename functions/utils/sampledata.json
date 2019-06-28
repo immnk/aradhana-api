@@ -19,6 +19,11 @@
     "eventName": "Mayfair booking",
     "eventPicture": "http://www.mayfairhotels.com/mayfair-goa/img/slide1.jpg",
     "permission": "admin"
+  }, {
+    "eventDate": "1563292800",
+    "eventName": "Together Forever",
+    "eventPicture": "https://snazzywallz.com/wp-content/uploads/2017/11/valentines-day-together-forever-600x600.png",
+    "permission": "admin"
   }],
   "users": [{
     "password": "chinna5",
