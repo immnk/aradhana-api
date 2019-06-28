@@ -67,14 +67,20 @@ router.get("/events", (req, res, next) => {
 router.post("/create", (req, res, next) => {
   const newEvent = req.body;
 
-  if(newEvent === undefined) {
+  console.log(newEvent);
+
+  if (newEvent === undefined) {
     res.json({
       success: false,
       message: "Missing fields"
     });
   } else {
-    const newEventRef = db.ref("/events").push();
-    newEventRef.set(newEvent);
+    db.ref("/events").push().set(newEvent, () => {
+      res.json({
+        success: true,
+        message: `Added new event`
+      });
+    });
   }
 });
 
