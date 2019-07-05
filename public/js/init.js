@@ -3,7 +3,7 @@
         $('.sidenav').sidenav();
         $('.datepicker').datepicker();
 
-        const LOCAL_END_POINT = "http://localhost:5001/aradhana-api/us-central1/app";
+        // const LOCAL_END_POINT = "http://localhost:5001/aradhana-api/us-central1/app";
         const REMOTE_END_POINT = "https://us-central1-aradhana-api.cloudfunctions.net/app";
 
         $("#eventForm").on("submit", function (e) {
