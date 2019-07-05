@@ -9,6 +9,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: false
 }));
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.set('Access-Control-Allow-Methods', 'GET');
+  res.set('Access-Control-Allow-Headers', 'Content-Type');
+  res.set('Access-Control-Max-Age', '3600');
+  next();
+});
 // app.use(firebaseUser.validateFirebaseIdToken);
 // Use the rollbar error handler to send exceptions to your rollbar account
 // app.use(rollbar.errorHandler());

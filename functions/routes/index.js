@@ -14,6 +14,7 @@ admin.initializeApp({
 
 const db = admin.database();
 
+// Need to really check if this service can be used
 router.get('/', (req, res, next) => {
   res.json({
     success: true,
@@ -61,7 +62,26 @@ router.get("/events", (req, res, next) => {
         body: events
       });
     });
+});
 
+router.post("/create", (req, res, next) => {
+  const newEvent = req.body;
+
+  console.log(newEvent);
+
+  if (newEvent === undefined) {
+    res.json({
+      success: false,
+      message: "Missing fields"
+    });
+  } else {
+    db.ref("/events").push().set(newEvent, () => {
+      res.json({
+        success: true,
+        message: `Added new event`
+      });
+    });
+  }
 });
 
 function returnErrorObject(errorMessage) {
