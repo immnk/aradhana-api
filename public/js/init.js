@@ -23,7 +23,7 @@
             var settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": `${LOCAL_END_POINT}/create`,
+                "url": `${REMOTE_END_POINT}/create`,
                 "method": "POST",
                 "headers": {
                     "content-type": "application/json"
