@@ -7,7 +7,9 @@
     "shell": "firebase functions:shell",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
+    "logs": "firebase functions:log",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "body-parser": "1.18.3",
@@ -16,7 +18,8 @@
     "firebase-admin": "^8.2.0",
     "firebase-functions": "3.0.1",
     "morgan": "1.9.1",
-    "rollbar": "2.4.7"
+    "rollbar": "2.4.7",
+    "snyk": "^1.192.4"
   },
   "devDependencies": {
     "eslint": "5.16.0",
@@ -25,5 +28,6 @@
   "engines": {
     "node": "8"
   },
-  "private": true
+  "private": true,
+  "snyk": true
 }
