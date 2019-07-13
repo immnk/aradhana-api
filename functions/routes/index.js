@@ -3,7 +3,6 @@ const express = require("express");
 const functions = require("firebase-functions");
 // The Firebase Admin SDK to access the Firebase Realtime Database.
 const admin = require("firebase-admin");
-// const serviceAccount = require("../utils/aradhana-api-serviceAccount.json");
 const router = express.Router();
 const constants = require("../utils/constants");
 
@@ -25,6 +24,8 @@ router.get("/", (req, res, next) => {
   });
 });
 
+// This API method validates the password entered
+// And tells if the password is admin or general user
 router.get("/validate", (req, res, next) => {
   let passkey = req.query.passkey;
   if (!passkey) res.json(returnErrorObject("API error. Please send passkey"));
@@ -44,6 +45,7 @@ router.get("/validate", (req, res, next) => {
     });
 });
 
+// API Method to get all events that this user is entitled to based on passkey
 router.get("/events", (req, res, next) => {
   let userPermission = req.query.permission;
   if (!userPermission) userPermission = user;
@@ -54,7 +56,6 @@ router.get("/events", (req, res, next) => {
     .ref("/events")
     .orderByChild("eventDate")
     .once("value", snapshot => {
-      // console.log(snapshot.val());
       let events = [];
       snapshot.forEach(child => {
         let event = child.val();
@@ -69,16 +70,12 @@ router.get("/events", (req, res, next) => {
     });
 });
 
+// This API method creates a new event to the database
 router.post("/create", (req, res, next) => {
   const newEvent = req.body;
 
-  console.log(newEvent);
-
   if (newEvent === undefined) {
-    res.json({
-      success: false,
-      message: "Missing fields"
-    });
+    res.json(returnErrorObject("Missing Fields"));
   } else {
     db.ref("/events")
       .push()
