@@ -5,5 +5,10 @@
       "source": "/app/**",
       "function": "app"
     }]
+  },
+  "functions": {
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run lint"
+    ]
   }
 }
