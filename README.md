@@ -39,6 +39,7 @@ All tasks and issues are listed as items in [Tasks & issues in repository Issues
 - [ ] Make automatic deployments on release branch
 - [ ] Create unit test cases with Mocha(JS test framework) and Chai(assertion library)
 - [x] Create index page to add rows to database automatically
+- [ ] Create Swagger documentation. [Swagger](https://dev.to/akshendra/generating-documentation-on-the-fly-in-express-2652)
 
 ## VS Code Plugins Recommended
 
@@ -49,6 +50,7 @@ All tasks and issues are listed as items in [Tasks & issues in repository Issues
 - markdownlint
 - vscode-icons
 - Prettier
+- [Swagger Generator](https://marketplace.visualstudio.com/items?itemName=dwarfpenguin.swagger-generator&ssr=false#overview)
 
 ## Useful websites
 
