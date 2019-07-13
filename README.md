@@ -33,12 +33,12 @@ Follow the following steps:
 
 All tasks and issues are listed as items in [Tasks & issues in repository Issues tab](https://github.com/immnk/webpack-testing/issues)
 
-- [ ] Write a README file.
+- [x] Write a README file.
 - [ ] Create SCSS and compile them with webpack
-- [ ] Add CI/CD pipelines
+- [x] Add CI/CD pipelines
 - [ ] Make automatic deployments on release branch
 - [ ] Create unit test cases with Mocha(JS test framework) and Chai(assertion library)
-- [ ] Create index page to add rows to database automatically
+- [x] Create index page to add rows to database automatically
 
 ## VS Code Plugins Recommended
 
@@ -49,6 +49,7 @@ All tasks and issues are listed as items in [Tasks & issues in repository Issues
 - IntelliSense for CSS class names
 - markdownlint
 - vscode-icons
+- prettier
 
 ## Useful websites
 
