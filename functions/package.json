@@ -10,17 +10,17 @@
     "logs": "firebase functions:log"
   },
   "dependencies": {
-    "body-parser": "~1.18.3",
-    "debug": "~2.6.9",
-    "express": "~4.17.1",
-    "firebase-admin": "~8.2.0",
-    "firebase-functions": "~3.0.1",
-    "morgan": "~1.9.1",
-    "rollbar": "~2.4.7"
+    "body-parser": "1.18.3",
+    "debug": "2.6.9",
+    "express": "4.17.1",
+    "firebase-admin": "8.2.0",
+    "firebase-functions": "3.0.1",
+    "morgan": "1.9.1",
+    "rollbar": "2.4.7"
   },
   "devDependencies": {
-    "eslint": "~5.16.0",
-    "eslint-plugin-promise": "~4.1.1"
+    "eslint": "5.16.0",
+    "eslint-plugin-promise": "4.1.1"
   },
   "engines": {
     "node": "8"
