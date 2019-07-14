@@ -11,18 +11,9 @@ app.use(
     extended: false
   })
 );
-app.use((_req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  res.set("Access-Control-Allow-Methods", "GET");
-  res.set("Access-Control-Allow-Headers", "Content-Type");
-  res.set("Access-Control-Max-Age", "3600");
-  next();
-});
 
+app.use("/api", index);
+// To maintain backward compatibility
 app.use("/", index);
 
 // catch 404 and forward to error handler
