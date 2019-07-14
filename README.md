@@ -40,6 +40,7 @@ All tasks and issues are listed as items in [Tasks & issues in repository Issues
 - [ ] Create unit test cases with Mocha(JS test framework) and Chai(assertion library)
 - [x] Create index page to add rows to database automatically
 - [ ] Create Swagger documentation. [Swagger](https://dev.to/akshendra/generating-documentation-on-the-fly-in-express-2652)
+- [ ] Use `react` to create UI using [Material UI](https://github.com/mui-org/material-ui)
 
 ## VS Code Plugins Recommended
 
